@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portofolio - Projects</title>
+        <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <!-- KIRI: logo + brand -->
+            <div class="nav-left">
+                <a href="index.html" class="brand-link">
+                <img src="image/logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+
+            <!-- HAMBURGER -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <!-- KANAN: menu -->
+            <div class="nav-right" id="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html"><b>Projects</b></a>
+                <a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <header>
+            <h1>PROJECTS</h1>
+        </header>
+        <section class="project-section">
+
+            <!-- LEFT IMAGE -->
+            <div class="project-phone">
+                <img src="image/animalpedia.jpeg" alt="Animal Pedia App">
+            </div>
+
+            <!-- CENTER CONTENT -->
+            <div class="project-content">
+
+                <div class="project-box">
+                <h1>Animal Pedia</h1>
+
+                <p>
+                    “Animal Pedia” is an animal-themed educational application for
+                    preschool children that combines learning and entertainment
+                    through information, characteristics, and animal sounds.
+                    I also contributed to the development of the machine learning
+                    model, achieving an accuracy of over 90%.
+                </p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="project-right">
+
+                <!-- CODE IMAGE -->
+                <div class="code-box">
+                <img src="image/cat.png" alt="ML Code">
+                </div>
+
+                <!-- ACCURACY CARD -->
+                <div class="accuracy-box">
+
+                <div class="accuracy-icon">
+                    🎯
+                </div>
+
+                <h3>Accuracy</h3>
+
+                <p>
+                    The model achieved an accuracy of over 90%.
+                </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ========================= -->
+        <!-- BIKE SHARING PROJECT -->
+        <!-- ========================= -->
+
+        <section class="bike-project">
+
+            <!-- LEFT IMAGES -->
+            <div class="bike-images">
+
+                <img src="image/bike1.png" alt="Bike Dashboard">
+
+                <img src="image/bike2.png" alt="Bike Analysis">
+
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="bike-content">
+
+                <h1>
+                Bike Sharing <br>
+                Data Analysis
+                </h1>
+
+                <div class="bike-box">
+
+                <p>
+                    One of the projects from the Dicoding course focused on
+                    transforming messy bike-sharing data into an interactive and
+                    insightful dashboard through data cleaning, analysis,
+                    and visualization.
+                </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <!-- KIRI -->
+                <div class="footer-left">
+
+                <img src="image/logo_footer.png" alt="Logo" class="footer-logo">
+
+                <p class="footer-desc">
+                    To get to know me better, click the button below.
+                </p>
+
+                <a href="about.html" class="footer-btn">
+                    About Me
+                    <span>→</span>
+                </a>
+
+                </div>
+
+                <!-- Kanan -->
+                 <div class="footer-right">
+                    <div class="footer-links">
+                        <h3>Tautan</h3>
+
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="experience.html">Experience</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+
+                    <div class="footer-social">
+
+                        <h3>Social</h3>
+
+                        <a href="https://www.instagram.com/dwiivan_15"
+                        target="_blank">
+
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/dwiivan15"
+                        target="_blank">
+
+                            <i class="fa-brands fa-linkedin"></i>
+                            LinkedIn
+
+                        </a>
+
+                        <a href="mailto:dwiivanf123@gmail.com">
+
+                            <i class="fa-regular fa-envelope"></i>
+                            Email
+
+                        </a>
+
+                        <a href="https://github.com/dwiivan15"
+                        target="_blank">
+
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+
+                        </a>
+
+                    </div>
+                 </div>
+            </div>
+            <!-- GARIS -->
+            <hr>
+            <!-- BAWAH -->
+            <div class="footer-bottom">
+                <p>© Ivan 2026</p>
+                <p>My Portofolio</p>
+            </div>
+
+        </footer>
+    </body>
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+    </script>
+</html>
