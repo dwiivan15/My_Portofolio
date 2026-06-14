@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portofolio - Home</title>
+        <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+
+
+    <body>
+        <nav class="navbar">
+
+            <!-- KIRI: logo + brand -->
+            <div class="nav-left">
+                <a href="home.html" class="brand-link">
+                <img src="image/logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+
+            <!-- HAMBURGER -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <!-- KANAN: menu -->
+            <div class="nav-right" id="menu">
+                <a href="home.html"><b>Home</b></a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </nav>
+
+        <header>
+            <h1>HOME</h1>
+        </header>
+        <section class="hero">
+            <!-- TEXT -->
+            <div class="hero-text">
+                <h2><i>Hello</i>, I am Ivan!</h2>
+                <p><i>"If you never try, you will never know."</i></p>
+                <a href="about.html" class="btn-about">
+                About Me <span>→</span>
+                </a>
+            </div>
+            <!-- IMAGE -->
+            <div class="hero-image">
+                <img src="image/foto_solo (1).png" alt="Foto Ivan">
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h2>My Experience</h2>
+                <p>Explore my experiences and the journey that has shaped my skills and growth.</p>
+                <a href="experience.html" class="btn-about">
+                Experience <span>→</span>
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="image/card.png" alt="card">
+            </div>
+        </section>
+
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <!-- KIRI -->
+                <div class="footer-left">
+
+                <img src="image/logo_footer.png" alt="Logo" class="footer-logo">
+
+                <p class="footer-desc">
+                    To get to know me better, click the button below.
+                </p>
+
+                <a href="about.html" class="footer-btn">
+                    About Me
+                    <span>→</span>
+                </a>
+
+                </div>
+
+                <!-- Kanan -->
+                 <div class="footer-right">
+                    <div class="footer-links">
+                        <h3>Tautan</h3>
+
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="experience.html">Experience</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+
+                    <div class="footer-social">
+
+                        <h3>Social</h3>
+
+                        <a href="https://www.instagram.com/dwiivan_15"
+                        target="_blank">
+
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/dwiivan15"
+                        target="_blank">
+
+                            <i class="fa-brands fa-linkedin"></i>
+                            LinkedIn
+
+                        </a>
+
+                        <a href="mailto:dwiivanf123@gmail.com">
+
+                            <i class="fa-regular fa-envelope"></i>
+                            Email
+
+                        </a>
+
+                        <a href="https://github.com/dwiivan15"
+                        target="_blank">
+
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+
+                        </a>
+
+                    </div>
+                 </div>
+            </div>
+            <!-- GARIS -->
+            <hr>
+            <!-- BAWAH -->
+            <div class="footer-bottom">
+                <p>© Ivan 2026</p>
+                <p>My Portofolio</p>
+            </div>
+
+        </footer>
+    </body>
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+    </script>
+</html>
