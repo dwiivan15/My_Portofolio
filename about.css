@@ -127,6 +127,54 @@
 }
 
 /* ========================= */
+/* TABLET PORTRAIT */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+  .about-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .profile-card,
+  .education-area {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .education-area h1 {
+    text-align: center;
+  }
+
+  .edu-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .edu-card img {
+    width: 100%;
+    max-width: 450px;
+    height: 220px;
+  }
+
+  .edu-text {
+    width: 100%;
+  }
+
+  .edu-text h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .edu-text p {
+    font-size: 24px;
+  }
+}
+
+/* ========================= */
 /* RESPONSIVE */
 /* ========================= */
 
