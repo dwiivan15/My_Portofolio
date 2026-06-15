@@ -215,123 +215,90 @@
 }
 
 /* ========================= */
-/* RESPONSIVE MOBILE */
+/* TABLET PORTRAIT */
 /* ========================= */
 
-@media (max-width: 768px) {
-
-  /* ========================= */
-  /* ANIMAL PEDIA */
-  /* ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
 
   .project-section {
+
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding: 30px 0;
+
+    gap: 30px;
+
+    padding: 40px 0;
   }
 
-  /* Judul & deskripsi tampil pertama */
+  /* Judul + deskripsi di atas */
+
   .project-content {
+
     order: 1;
+
     width: 100%;
     min-width: unset;
   }
 
-  /* Gambar HP tampil kedua */
-  .project-phone {
-    order: 2;
-  }
-
-  /* Accuracy dan code tampil terakhir */
-  .project-right {
-    order: 3;
-
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-phone img {
-    width: 220px;
-    height: 450px;
-  }
-
-  .project-box {
-    padding: 25px;
-  }
-
   .project-box h1 {
-    font-size: 42px;
+
+    font-size: 56px;
+
     text-align: center;
   }
 
   .project-box p {
-    font-size: 18px;
-    text-align: justify;
+
+    font-size: 22px;
+  }
+
+  /* Baris bawah */
+
+  .project-phone {
+
+    order: 2;
+  }
+
+  .project-right {
+
+    order: 3;
+  }
+
+  /* Gabungkan phone + right */
+
+  .project-phone,
+  .project-right {
+
+    display: flex;
+  }
+
+  /* Container bawah */
+
+  .project-phone {
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .project-phone img {
+
+    width: 260px;
+    height: 540px;
+  }
+
+  .project-right {
+
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: center;
   }
 
   .code-box,
   .accuracy-box {
-    width: 100%;
-    max-width: 320px;
-  }
 
-  .accuracy-icon {
-    font-size: 50px;
-  }
-
-  .accuracy-box h3 {
-    font-size: 24px;
-  }
-
-  .accuracy-box p {
-    font-size: 18px;
-  }
-
-  /* ========================= */
-  /* BIKE SHARING */
-  /* ========================= */
-
-  .bike-project {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding: 30px 0;
-  }
-
-  /* Judul + deskripsi di atas */
-  .bike-content {
-    order: 1;
-    width: 100%;
-    min-width: unset;
-  }
-
-  /* Gambar di bawah */
-  .bike-images {
-    order: 2;
-    width: 100%;
-  }
-
-  .bike-content h1 {
-    font-size: 42px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .bike-box {
-    padding: 25px;
-  }
-
-  .bike-box p {
-    font-size: 18px;
-    text-align: justify;
-  }
-
-  .bike-images img {
-    width: 100%;
-    height: 180px;
+    width: 320px;
   }
 }
